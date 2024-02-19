@@ -1,11 +1,8 @@
 import React from 'react'
-import { Button } from 'flowbite-react'
 
 function App() {
   return (
-    <div>
-      <Button>Click me</Button>
-    </div>
+    <div>App</div>
   )
 }
 

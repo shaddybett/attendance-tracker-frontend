@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+label{
+    text-align: center;
+    font-size:x-large;
+}
+
+div{
+    padding-bottom: 50px;
+}
+.input.className{
+    padding:10px 15px;
+    border-radius: 20px;
+    
+}
+form{
+    padding: 70px 560px;
+    background-color:greenyellow;
+    size: 400px;
+
+}

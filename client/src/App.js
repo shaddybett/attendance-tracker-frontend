@@ -1,9 +1,14 @@
 import React from 'react'
-import { Carousel } from 'flowbite-react'
+import Form from './Form'
+
 
 function App() {
   return (
-    <div>Application</div>
+    <div>
+      <h1>Application</h1>
+      <Form />
+    </div>
+    
   )
 }
 

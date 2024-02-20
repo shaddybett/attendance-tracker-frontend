@@ -28,7 +28,6 @@ function ProfileForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you can implement your logic for form submission
     console.log('Form submitted with data:', formData);
   };
 

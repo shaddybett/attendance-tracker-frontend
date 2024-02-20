@@ -1,5 +1,7 @@
 import React from 'react'
 import Form from './Form'
+import ProfileForm from './Profile'
+
 
 import Admin from './Admin'
 
@@ -13,7 +15,11 @@ function App() {
       <Loginpage/>
       <h1>Application</h1>
       <Form />
+    
+      <ProfileForm />
+      
       <Admin />
+
     </div>
     
   )

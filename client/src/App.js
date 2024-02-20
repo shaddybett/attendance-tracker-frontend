@@ -1,6 +1,10 @@
 import React from 'react'
 import Form from './Form'
+
+import Admin from './Admin'
+
 import Loginpage from './Loginpage'
+
 
 
 function App() {
@@ -9,6 +13,7 @@ function App() {
       <Loginpage/>
       <h1>Application</h1>
       <Form />
+      <Admin />
     </div>
     
   )

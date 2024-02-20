@@ -22,7 +22,7 @@ class MyClassForm extends Component {
     // Here you can implement your logic for form submission
     console.log('Form submitted with state:', this.state);
     // You can also call a function passed from parent component as a prop
-    // this.props.onSubmit(this.state);
+ 
   };
 
   render() {

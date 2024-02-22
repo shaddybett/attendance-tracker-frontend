@@ -21,3 +21,80 @@ form{
     size: 400px;
 
 }
+
+.head{
+    font-size: 50px;
+    text-align:center;
+    font-weight: bolder;
+}
+
+.role{
+    font-size: 50px;
+    text-align:center
+}
+
+.head2{
+    font-size: 30px;
+    text-align:center;
+    margin-right: auto;
+    font-weight: bold;
+    padding-top: 50px;
+
+}
+
+.logintitle{
+    font-size: 30px;
+    text-align:center;
+    margin-right: auto;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.div2{
+    font-size: 30px;
+    text-align:right;
+    margin-right: auto;
+    font-weight: bold;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container > * {
+    margin-bottom: 10px; /* Optional: Add some spacing between elements */
+}
+
+.btn1 {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color:aqua;
+    color: black;
+    margin: 10px auto; 
+    transition: box-shadow 0.3s; 
+    box-shadow: 0 0 10px ; 
+    display: block;
+}
+
+.btn1:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.input1,
+.input2{
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    display: block;
+    margin:  10px auto;
+}
+
+

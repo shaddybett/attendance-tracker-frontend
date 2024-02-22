@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './index'
 const Loginpage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -7,6 +7,7 @@ const Loginpage = () => {
   const [Admin, setAdmin] = useState(false);
   const [Teacher, setTeacher] = useState(false);
   const [Student, setStudent] = useState(false);
+
   const handleLogin = () => {
     if (email.trim() !== '' && password.trim() !== '') {
       setLoggedIn(true);
@@ -18,10 +19,11 @@ const Loginpage = () => {
 
   return (
     <div>
-        <h1>Moringa <br/> attendance system</h1>
-        <div>
-            <h2>Select Role</h2>
-            <label>
+      <h1 className='head'>MORINGA ATTENDANCE SYSTEM</h1>
+      <div className='role'>
+        <h2 className='head2'>Select Role</h2>
+        <div2 className="div2 role-checkboxes">
+          <label className='checkbox1'>
             Admin
             <input
               type="checkbox"
@@ -29,7 +31,7 @@ const Loginpage = () => {
               onChange={() => setAdmin(!Admin)}
             />
           </label>
-          <label>
+          <label className='checkbox2'>
             Teacher
             <input
               type="checkbox"
@@ -37,7 +39,7 @@ const Loginpage = () => {
               onChange={() => setTeacher(!Teacher)}
             />
           </label>
-          <label>
+          <label className='checkbox3'>
             Student
             <input
               type="checkbox"
@@ -45,30 +47,31 @@ const Loginpage = () => {
               onChange={() => setStudent(!Student)}
             />
           </label>
-        </div>
+        </div2>
+      </div>
       {!loggedIn ? (
         <div>
-          <h1>Login</h1>
-          <input
+          <h1 className='logintitle'>Login</h1>
+          <input className='input1'
             type="text"
             placeholder="janedoe@gmail.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            style={{ fontStyle: 'italic', fontWeight: 'bold' }}
+            style={{ fontWeight: 'bold' }}
           />
-          <input
+          <input className='input2'
             type="password"
-        placeholder="******************"
+            placeholder="******************"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             style={{ fontStyle: 'italic', fontWeight: 'bold' }}
           />
-          <button onClick={handleLogin}>Login</button>
+          <button type="button" className="btn1" onClick={handleLogin}>Login</button>
         </div>
       ) : (
         <div>
           <h2>Welcome, {email}!</h2>
-          <button onClick={() => setLoggedIn(false)}>Logout</button>
+          <button type="button" className="btn2" onClick={() => setLoggedIn(false)}>Logout</button>
         </div>
       )}
     </div>

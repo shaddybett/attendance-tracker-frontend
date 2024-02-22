@@ -27,8 +27,7 @@ class Form extends Component {
 
   render() {
     return (
-      <div style={{ border: '1px solid #ccc', borderRadius: '100px', padding: '20px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2)', transition: '0.3s' }}>
-        <h2>Create Class</h2>
+      <div>
         <form onSubmit={this.handleSubmit}>
           <div>
             <label htmlFor="className">Class Name:</label>

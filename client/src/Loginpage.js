@@ -1,3 +1,4 @@
+import Navbar from './Navbar';    
 import React, { useState } from 'react';
 
 const Loginpage = () => {
@@ -18,6 +19,7 @@ const Loginpage = () => {
 
   return (
     <div>
+      <Navbar />  
         <h1>Moringa <br/> attendance system</h1>
         <div>
             <h2>Select Role</h2>
